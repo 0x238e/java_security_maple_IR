@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	ignorecase = true
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
+[remote "aosp"]
+	url = https://aosp.tuna.tsinghua.edu.cn/platform/system/webservd
+	projectname = platform/system/webservd
+	fetch = +refs/heads/*:refs/remotes/aosp/*

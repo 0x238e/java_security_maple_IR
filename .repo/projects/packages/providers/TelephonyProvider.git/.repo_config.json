@@ -1,0 +1,26 @@
+{
+  "core.filemode": [
+    "false"
+  ], 
+  "remote.aosp.fetch": [
+    "+refs/heads/*:refs/remotes/aosp/*"
+  ], 
+  "core.repositoryformatversion": [
+    "0"
+  ], 
+  "remote.aosp.url": [
+    "https://aosp.tuna.tsinghua.edu.cn/platform/packages/providers/TelephonyProvider"
+  ], 
+  "core.ignorecase": [
+    "true"
+  ], 
+  "filter.lfs.smudge": [
+    "git-lfs smudge --skip -- %f"
+  ], 
+  "filter.lfs.process": [
+    "git-lfs filter-process --skip"
+  ], 
+  "remote.aosp.projectname": [
+    "platform/packages/providers/TelephonyProvider"
+  ]
+}

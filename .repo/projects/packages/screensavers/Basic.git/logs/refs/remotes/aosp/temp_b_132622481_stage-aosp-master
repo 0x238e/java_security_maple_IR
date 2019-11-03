@@ -1,0 +1,1 @@
+0000000000000000000000000000000000000000 4f3a3b581d293b2e8f8ceaac755d1285250cf4e8 yiweiyang <yangyiwei2000@163.com> 1572792748 +0800	fetch --progress aosp --tags +refs/tags/*:refs/tags/* +refs/heads/*:refs/remotes/aosp/* +refs/tags/android-7.0.0_r1:refs/tags/android-7.0.0_r1: storing head

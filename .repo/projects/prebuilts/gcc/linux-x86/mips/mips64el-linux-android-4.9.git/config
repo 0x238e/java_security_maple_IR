@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	ignorecase = true
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
+[remote "aosp"]
+	url = https://aosp.tuna.tsinghua.edu.cn/platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9
+	projectname = platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9
+	fetch = +refs/heads/*:refs/remotes/aosp/*

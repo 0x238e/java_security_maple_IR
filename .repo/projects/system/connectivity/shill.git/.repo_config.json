@@ -1,0 +1,14 @@
+{
+  "core.repositoryformatversion": [
+    "0"
+  ], 
+  "core.bare": [
+    "true"
+  ], 
+  "core.ignorecase": [
+    "true"
+  ], 
+  "core.filemode": [
+    "false"
+  ]
+}
