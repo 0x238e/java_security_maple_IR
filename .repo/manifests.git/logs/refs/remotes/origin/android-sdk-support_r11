@@ -1,1 +1,0 @@
-0000000000000000000000000000000000000000 416a590af8e338c9b3676d2ca0b1c7f13cec3553 yiweiyang <yangyiwei2000@163.com> 1572789232 +0800	fetch --progress origin --tags +refs/tags/*:refs/tags/* +refs/heads/*:refs/remotes/origin/* +refs/heads/android-7.0.0_r1:refs/remotes/origin/android-7.0.0_r1: storing head

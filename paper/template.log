@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.12)  5 JAN 2020 19:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.12)  5 JAN 2020 21:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -624,6 +624,21 @@ LaTeX Warning: Label `fig:TaintDroid' multiply defined.
 
 LaTeX Warning: Label `fig:inspeckage1' multiply defined.
 
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `fig:ApakoHa' multiply defined.
+
+
+LaTeX Warning: Label `fig:ApakoHa' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
 )
 \openout1 = `template.aux'.
 
@@ -803,10 +818,6 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 41.
-
-
-LaTeX Warning: Reference `sec:FlowDroid' on page 1 undefined on input line 44.
-
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 51.
 
@@ -814,7 +825,7 @@ Overfull \hbox (56.59012pt too wide) in paragraph at lines 72--92
  [][] 
  []
 
-<TaintDroid.png, id=89, 627.34375pt x 297.11pt>
+<TaintDroid.png, id=102, 627.34375pt x 297.11pt>
 File: TaintDroid.png Graphic file (type png)
 <use TaintDroid.png>
 Package pdftex.def Info: TaintDroid.png  used on input line 103.
@@ -829,55 +840,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 1231) has occurred while \output is active []
 
  [2 <./TaintDroid.png>]
-<TaintDroid2.png, id=111, 1113.15875pt x 447.6725pt>
+<TaintDroid2.png, id=125, 1113.15875pt x 447.6725pt>
 File: TaintDroid2.png Graphic file (type png)
 <use TaintDroid2.png>
 Package pdftex.def Info: TaintDroid2.png  used on input line 129.
 (pdftex.def)             Requested size: 445.25562pt x 179.06583pt.
-<inspeckage1.png, id=113, 163.61125pt x 293.095pt>
+<inspeckage1.png, id=127, 163.61125pt x 293.095pt>
 File: inspeckage1.png Graphic file (type png)
 <use inspeckage1.png>
 Package pdftex.def Info: inspeckage1.png  used on input line 146.
 (pdftex.def)             Requested size: 98.1675pt x 175.85834pt.
-<inspeckage2.png, id=114, 2708.1175pt x 1102.1175pt>
+<inspeckage2.png, id=128, 2708.1175pt x 1102.1175pt>
 File: inspeckage2.png Graphic file (type png)
 <use inspeckage2.png>
 Package pdftex.def Info: inspeckage2.png  used on input line 153.
 (pdftex.def)             Requested size: 270.8276pt x 110.2182pt.
  [3 <./TaintDroid2.png>]
-<TaintART1.png, id=121, 707.64375pt x 509.905pt>
+<TaintART1.png, id=135, 707.64375pt x 509.905pt>
 File: TaintART1.png Graphic file (type png)
 <use TaintART1.png>
 Package pdftex.def Info: TaintART1.png  used on input line 165.
 (pdftex.def)             Requested size: 212.29475pt x 152.97267pt.
  [4 <./inspeckage1.png> <./inspeckage2.png> <./TaintART1.png>]
-<TaintART2.png, id=132, 554.07pt x 527.9725pt>
+<TaintART2.png, id=146, 554.07pt x 527.9725pt>
 File: TaintART2.png Graphic file (type png)
 <use TaintART2.png>
 Package pdftex.def Info: TaintART2.png  used on input line 182.
 (pdftex.def)             Requested size: 166.22227pt x 158.39296pt.
-<TaintART3.png, id=134, 444.66125pt x 235.88126pt>
+<TaintART3.png, id=148, 444.66125pt x 235.88126pt>
 File: TaintART3.png Graphic file (type png)
 <use TaintART3.png>
 Package pdftex.def Info: TaintART3.png  used on input line 192.
 (pdftex.def)             Requested size: 177.86134pt x 94.35083pt.
  [5 <./TaintART2.png> <./TaintART3.png>]
-<Lattice.png, id=145, 556.0775pt x 245.91875pt>
+<Lattice.png, id=159, 556.0775pt x 245.91875pt>
 File: Lattice.png Graphic file (type png)
 <use Lattice.png>
 Package pdftex.def Info: Lattice.png  used on input line 203.
 (pdftex.def)             Requested size: 222.42705pt x 98.36575pt.
-<TaintART4.png, id=147, 1385.175pt x 844.15375pt>
+<TaintART4.png, id=161, 1385.175pt x 844.15375pt>
 File: TaintART4.png Graphic file (type png)
 <use TaintART4.png>
 Package pdftex.def Info: TaintART4.png  used on input line 237.
 (pdftex.def)             Requested size: 277.03009pt x 168.82776pt.
-
-
-LaTeX Warning: Reference `fig:fig:TaintART2' on page 6 undefined on input line 243.
-
-[6 <./Lattice.png>]
-<TaintART5.png, id=156, 1184.425pt x 232.87pt>
+ [6 <./Lattice.png>]
+<TaintART5.png, id=171, 1184.425pt x 232.87pt>
 File: TaintART5.png Graphic file (type png)
 <use TaintART5.png>
 Package pdftex.def Info: TaintART5.png  used on input line 247.
@@ -887,39 +894,105 @@ Overfull \hbox (4.00662pt too wide) in paragraph at lines 247--248
  [][] 
  []
 
+<FlowDroid1.png, id=172, 489.83pt x 422.57875pt>
+File: FlowDroid1.png Graphic file (type png)
+<use FlowDroid1.png>
+Package pdftex.def Info: FlowDroid1.png  used on input line 266.
+(pdftex.def)             Requested size: 195.92853pt x 169.0285pt.
+[7 <./TaintART4.png> <./TaintART5.png (PNG copy)>]
+Overfull \hbox (39.9705pt too wide) in paragraph at lines 275--295
+ [][] 
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<FlowDroid4.png, id=182, 1011.78pt x 341.275pt>
+File: FlowDroid4.png Graphic file (type png)
+<use FlowDroid4.png>
+Package pdftex.def Info: FlowDroid4.png  used on input line 308.
+(pdftex.def)             Requested size: 404.70483pt x 136.50757pt.
+[8 <./FlowDroid1.png> <./FlowDroid4.png>]
+<FlowDroid3.png, id=191, 444.66125pt x 249.93375pt>
+File: FlowDroid3.png Graphic file (type png)
+<use FlowDroid3.png>
+Package pdftex.def Info: FlowDroid3.png  used on input line 341.
+(pdftex.def)             Requested size: 177.86134pt x 99.97173pt.
+ [9 <./FlowDroid3.png>]
+<IFDS.png, id=200, 510.90875pt x 199.74625pt>
+File: IFDS.png Graphic file (type png)
+<use IFDS.png>
+Package pdftex.def Info: IFDS.png  used on input line 357.
+(pdftex.def)             Requested size: 204.35988pt x 79.89708pt.
+ [10 <./IFDS.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
+[]\T1/ptm/m/n/10 (+20) The doc-u-men-ta-tion for [][]\T1/cmtt/m/n/10 Soot []\T1/ptm/m/n/10 (+20) may be found at []$\T1/cmtt/m/n/10 https : / / github . com / Sable / soot$[] \T1/ptm/m/n/10 (+20) And the tu-to-
+ []
 
- [7 <./TaintART4.png> <./TaintART5.png (PNG copy)>]
 
-LaTeX Warning: Citation 'Sun2016CCS' on page 8 undefined on input line 283.
-
-
-LaTeX Warning: Citation 'ABDE2019WCNCW' on page 8 undefined on input line 284.
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
+\T1/ptm/m/n/10 (+20) rial to op-ti-mize the an-droid app's code listed here at []$\T1/cmtt/m/n/10 https : / / github . com / Sable / soot / wiki /
+ []
 
 
-LaTeX Warning: Citation 'Xu2018SPW' on page 8 undefined on input line 285.
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
+
+ []
+
+<ApakoHa.png, id=210, 728.7225pt x 407.5225pt>
+File: ApakoHa.png Graphic file (type png)
+<use ApakoHa.png>
+Package pdftex.def Info: ApakoHa.png  used on input line 391.
+(pdftex.def)             Requested size: 291.48383pt x 163.0061pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--398
+
+ []
+
+<2.png, id=211, 1541.76pt x 722.7pt>
+File: 2.png Graphic file (type png)
+<use 2.png>
+Package pdftex.def Info: 2.png  used on input line 401.
+(pdftex.def)             Requested size: 308.34654pt x 144.53743pt.
+<Display1.png, id=212, 775.89874pt x 480.79625pt>
+File: Display1.png Graphic file (type png)
+<use Display1.png>
+Package pdftex.def Info: Display1.png  used on input line 411.
+(pdftex.def)             Requested size: 310.354pt x 192.31508pt.
+[11 <./ApakoHa.png> <./2.png>]
+<Display2.png, id=222, 784.9325pt x 485.815pt>
+File: Display2.png Graphic file (type png)
+<use Display2.png>
+Package pdftex.def Info: Display2.png  used on input line 417.
+(pdftex.def)             Requested size: 313.96744pt x 194.32256pt.
 
 
-LaTeX Warning: Citation 'Yerima2014NGMAST' on page 8 undefined on input line 286.
+LaTeX Warning: Citation 'Sun2016CCS' on page 12 undefined on input line 467.
 
 
-LaTeX Warning: Citation 'Hsiao2014IMIS' on page 8 undefined on input line 287.
+LaTeX Warning: Citation 'ABDE2019WCNCW' on page 12 undefined on input line 468.
 
 
-LaTeX Warning: Citation 'Ngu2017ICSE' on page 8 undefined on input line 288.
+LaTeX Warning: Citation 'Xu2018SPW' on page 12 undefined on input line 469.
 
 
-LaTeX Warning: Citation 'Arzt2014SIGPLAN' on page 8 undefined on input line 289.
+LaTeX Warning: Citation 'Yerima2014NGMAST' on page 12 undefined on input line 470.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
-[8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+
+LaTeX Warning: Citation 'Hsiao2014IMIS' on page 12 undefined on input line 471.
+
+
+LaTeX Warning: Citation 'Ngu2017ICSE' on page 12 undefined on input line 472.
+
+
+LaTeX Warning: Citation 'Arzt2014SIGPLAN' on page 12 undefined on input line 473.
+
+[12 <./Display1.png> <./Display2.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 480.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 480.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 480.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 480.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 32EC4AC06CE0D88ABE42B7D12311BCA2;1397.
+(rerunfilecheck)             Checksum: 2F954DAD3739367D84B96A8122686BBD;1663.
 
 
 LaTeX Warning: There were undefined references.
@@ -937,18 +1010,18 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24085 strings out of 492616
- 438616 string characters out of 6129481
- 966509 words of memory out of 5000000
- 27619 multiletter control sequences out of 15000+600000
- 584521 words of font info for 145 fonts, out of 8000000 for 9000
+ 24175 strings out of 492616
+ 439722 string characters out of 6129481
+ 958784 words of memory out of 5000000
+ 27658 multiletter control sequences out of 15000+600000
+ 585751 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,1027b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (8 pages, 1042472 bytes).
+ 40i,11n,63p,1760b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on template.pdf (13 pages, 1851987 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 26331 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 26395 words of extra memory for PDF output out of 29859 (max. 10000000)
 

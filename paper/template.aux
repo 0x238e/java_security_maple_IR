@@ -22,7 +22,7 @@
 \@writefile{lot}{\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax }
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The comparison of the state of the art android taint analysis}}{2}{table.1}\protected@file@percent }
-\newlabel{tab:table}{{1}{2}{The comparison of the state of the art android taint analysis}{table.1}{}}
+\newlabel{tab:table1}{{1}{2}{The comparison of the state of the art android taint analysis}{table.1}{}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {2}Related workflow}{2}{section.2}\protected@file@percent }
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Taintdroid}{2}{subsection.2.1}\protected@file@percent }
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces TaintDroid Multi-level tracking.}}{2}{figure.1}\protected@file@percent }
@@ -55,6 +55,28 @@
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Taint tag storage using Register R5.}}{7}{figure.10}\protected@file@percent }
 \newlabel{fig:TaintART5}{{10}{7}{Taint tag storage using Register R5}{figure.10}{}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Principles of finding ICFG}{7}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Definition of the lifecycle of android app}{7}{subsubsection.3.2.1}\protected@file@percent }
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The functions in FlowDroid}}{8}{table.2}\protected@file@percent }
+\newlabel{tab:table1}{{2}{8}{The functions in FlowDroid}{table.2}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces the lifecycle of android app.}}{8}{figure.11}\protected@file@percent }
+\newlabel{fig:FlowDroid1}{{11}{8}{the lifecycle of android app}{figure.11}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces the more detailed lifecycle of android app.}}{8}{figure.12}\protected@file@percent }
+\newlabel{fig:FlowDroid4}{{12}{8}{the more detailed lifecycle of android app}{figure.12}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Definition of the multiple entry point}{8}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Overview of the whole process}{9}{subsubsection.3.2.3}\protected@file@percent }
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces TaintART Taint Propogation.}}{9}{figure.13}\protected@file@percent }
+\newlabel{fig:Overview of the whole process}{{13}{9}{TaintART Taint Propogation}{figure.13}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Principles of finding IFDS}{9}{subsection.3.3}\protected@file@percent }
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces the process of IFDS.}}{10}{figure.14}\protected@file@percent }
+\newlabel{fig:IFDS}{{14}{10}{the process of IFDS}{figure.14}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4}Application Implementation}{10}{section.4}\protected@file@percent }
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Useful Tools introduction}{10}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Soot}{10}{subsubsection.4.1.1}\protected@file@percent }
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Workflow}{11}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces the process of ApakoHa.}}{11}{figure.15}\protected@file@percent }
+\newlabel{fig:ApakoHa}{{15}{11}{the process of ApakoHa}{figure.15}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces the information of different source}}{11}{figure.16}\protected@file@percent }
+\newlabel{fig:2}{{16}{11}{the information of different source}{figure.16}{}}
 \abx@aux@cite{Sun2016CCS}
 \abx@aux@segm{0}{0}{Sun2016CCS}
 \abx@aux@cite{ABDE2019WCNCW}
@@ -69,12 +91,15 @@
 \abx@aux@segm{0}{0}{Ngu2017ICSE}
 \abx@aux@cite{Arzt2014SIGPLAN}
 \abx@aux@segm{0}{0}{Arzt2014SIGPLAN}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Taint sink}{8}{subsubsection.3.2.1}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Principles of finding IFDS}{8}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4}Application Implementation}{8}{section.4}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Useful Tools introduction}{8}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Soot}{8}{subsubsection.4.1.1}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Workflow}{8}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}benchmark}{8}{subsubsection.4.2.1}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}References}{8}{subsection.4.3}\protected@file@percent }
-\newlabel{sec:TaintDroid}{{4.3}{8}{References}{subsection.4.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Display}{12}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces the Display of \emph  {ApakoHa}, DTA part}}{12}{figure.17}\protected@file@percent }
+\newlabel{fig:ApakoHa}{{17}{12}{the Display of \emph {ApakoHa}, DTA part}{figure.17}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces the Display of \emph  {ApakoHa}, STA oart}}{12}{figure.18}\protected@file@percent }
+\newlabel{fig:ApakoHa}{{18}{12}{the Display of \emph {ApakoHa}, STA oart}{figure.18}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Benchmark}{12}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}References}{12}{subsection.4.5}\protected@file@percent }
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces The comparison of Control and Information analysis}}{13}{table.3}\protected@file@percent }
+\newlabel{tab:table1}{{3}{13}{The comparison of Control and Information analysis}{table.3}{}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces The comparison of the state of the art android taint analysis}}{13}{table.4}\protected@file@percent }
+\newlabel{tab:table1}{{4}{13}{The comparison of the state of the art android taint analysis}{table.4}{}}
+\newlabel{sec:TaintDroid}{{4.5}{13}{References}{subsection.4.5}{}}

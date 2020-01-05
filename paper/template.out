@@ -11,11 +11,14 @@
 \BOOKMARK [3][-]{subsubsection.3.1.4}{Taint sink}{subsection.3.1}% 11
 \BOOKMARK [3][-]{subsubsection.3.1.5}{Taint tag storage}{subsection.3.1}% 12
 \BOOKMARK [2][-]{subsection.3.2}{Principles of finding ICFG}{section.3}% 13
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Taint sink}{subsection.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.3}{Principles of finding IFDS}{section.3}% 15
-\BOOKMARK [1][-]{section.4}{Application Implementation}{}% 16
-\BOOKMARK [2][-]{subsection.4.1}{Useful Tools introduction}{section.4}% 17
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Soot}{subsection.4.1}% 18
-\BOOKMARK [2][-]{subsection.4.2}{Workflow}{section.4}% 19
-\BOOKMARK [3][-]{subsubsection.4.2.1}{benchmark}{subsection.4.2}% 20
-\BOOKMARK [2][-]{subsection.4.3}{References}{section.4}% 21
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Definition of the lifecycle of android app}{subsection.3.2}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Definition of the multiple entry point}{subsection.3.2}% 15
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Overview of the whole process}{subsection.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.3}{Principles of finding IFDS}{section.3}% 17
+\BOOKMARK [1][-]{section.4}{Application Implementation}{}% 18
+\BOOKMARK [2][-]{subsection.4.1}{Useful Tools introduction}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Soot}{subsection.4.1}% 20
+\BOOKMARK [2][-]{subsection.4.2}{Workflow}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.3}{Display}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.4}{Benchmark}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.5}{References}{section.4}% 24

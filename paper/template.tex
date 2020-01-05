@@ -41,8 +41,8 @@
 \begin{abstract}
   Privacy protection on android phones is a widely discussed topic nowadays. As the main leaking source, many tools analyzing information flow statically and dynamically. Integrating dynamic taint analysis in the development process enables early detection of potential privacy leakage, which reduces the cost of fixing them.
   In this paper, we present \emph{ApakoHa}, a dynamic taint analysis tool for Android apps that interleaves bug fixing and code development in the VS-code integrated development environment. 
-  \emph{ApakoHa} is based on the novel framework of TaintART that makes full use of android ART runtime to get information flow, and computes the more complex results and optimizes the bytecode through soot\ref{sec:FlowDroid}. incrementally later using static analyzing tools. Unlike traditional batch-style static-analysis tools, \emph{ApakoHa} causes minimal disruption to the developer’s workflow. This video
-demo showcases the main features of \emph{ApakoHa}: 
+  \emph{ApakoHa} is based on the novel framework of TaintART that makes full use of android ART runtime to get information flow, and computes the more complex results and optimizes the bytecode through soot\ref{fig:FlowDroid1}. incrementally later using static analyzing tools. Unlike traditional batch-style static-analysis tools, \emph{ApakoHa} causes minimal disruption to the developer’s workflow. This video
+demo showcases the main features of \emph{ApakoHa}: http://bilibili.com/video/av82222945/
 
 \end{abstract}
 
@@ -55,16 +55,16 @@ demo showcases the main features of \emph{ApakoHa}:
 Android security has attracted much research attention from both academy 
             and industry recently. Dynamic Taint Analysis(DTA) is a classic analysis to detect
              information flow problems and it has been widely adopted to detect private
-             data leaks in Android applications. In this project, we will automate the
+             data leaks in Android applications. In this project, \emph{ApakoHa} will automate the
              process of taint analysis and provide more detailed information about the dataflow and ICFG on the source code. Thus providing a way for Maple IR to continue to compile.
 
 First, in terms of the performance of the DTA, we refer to the TaintART techniques to utilize the 
             compiler and the register allocation of android ART Runtime. Then, a taint propagation 
             framework is proposed and the correctness of the taint propagation analysis is proved by 
-            their paper. After we obtain the information flow and what kind of method the information is leaking, we try to make highlight the code on VS-Code front end,
+            their paper. After \emph{ApakoHa} obtains the information flow and what kind of method the information is leaking, we try to make highlight the code on VS-Code front end,
             Finally, in the backend, the function name and the taint source will be input to soot, a java static analyzing tool to output ICFG and optimize the code automatically  by adopting the methods of eliminating, replacing and moving.
 
-We're actually adopting the method of combing the advantages of dynamic and static taint analysis techniques. Through static analysis can sort out the general idea, through dynamic analysis can get the actual execution process of the program. Both of them can help each other to realize the deep penetration test of the responsible app. The pros and cons of the state of art are listed as follows:
+\emph{ApakoHa} is actually adopting the method of combing the advantages of dynamic and static taint analysis techniques. Through static analysis can sort out the general idea, through dynamic analysis can get the actual execution process of the program. Both of them can help each other to realize the deep penetration test of the responsible app. The pros and cons of the state of art are listed as follows:
 
 \begin{table}
   \caption{The comparison of the state of the art android taint analysis}
@@ -82,13 +82,13 @@ We're actually adopting the method of combing the advantages of dynamic and stat
            &  &Heros/DroidSafe & Transform data flow analysis to improve accuracy     \\
            &  & &     \\
            &  Component and library & FlowDroid& Manual analysis and Implementation \\
-           & function propagation analysis & &    Automatic derivation with flowdroid   \\
+           & function propagation analysis & &    Automatic derivation with FlowDroid   \\
            &  & &     \\
      Dynamic & Multi level propagation analysis&TaintDroid & Address multiple levels of communication strategy      \\
            &   & Appsplaygroud...   & Optimization or application extension  \\
      \bottomrule
    \end{tabular}
-   \label{tab:table}
+   \label{tab:table1}
  \end{table}
 
 
@@ -214,7 +214,7 @@ For any value x belongs to the value set V, the intersection operation $\cup$ ta
 
 The top element is the empty set $\emptyset$, which is expressed as t, which has t$ \wedge $x = x for all x in V; the bottom element is the complete set u, which is expressed as $\perp$, which has $\perp\wedge$ x = $\perp$, for all x in V.
 
-In the taint propagation logic, each statement stat corresponds to a transfer function FS, and the transfer function of a block containing multiple statements can be constructed by combining the transfer functions corresponding to each statement. The function set F is composed of a set of transfer functions $F_{S}$, whose input is the mapping $in[S]$ of the stain variable to the element in the lattice, and the input is a new mapping $out[S]$ after the stain propagation In forward stain propagation analysis, the transfer function $F_{S}$ takes $in[S]$ before the statement as the input and outputs $out[S]$ after the statement; the transfer function f is closed for combination operation, that is, for any function f and G in F, the function h with $H(x) = g(f(x))$ is also in F. there is a unit function I in the transfer function family F, which accepts a mapping as the same mapping returned by the input and output, that is, for All x in V, $I(x) = x$
+In the taint propagation logic, each statement stat corresponds to a transfer function FS, and the transfer function of a block containing multiple statements can be constructed by combining the transfer functions corresponding to each statement. The function set F is composed of a set of transfer functions $F_{S}$, whose input is the mapping $in[S]$ of the taint variable to the element in the lattice, and the input is a new mapping $out[S]$ after the taint propagation In forward taint propagation analysis, the transfer function $F_{S}$ takes $in[S]$ before the statement as the input and outputs $out[S]$ after the statement; the transfer function f is closed for combination operation, that is, for any function f and G in F, the function h with $H(x) = g(f(x))$ is also in F. there is a unit function I in the transfer function family F, which accepts a mapping as the same mapping returned by the input and output, that is, for All x in V, $I(x) = x$
 
 Monotonicity is defined as: 
 
@@ -240,7 +240,7 @@ The main choice of the taint slot is the exit function related to the network, a
 \end{figure}
 
 \subsubsection{Taint tag storage}
-Another feature of TaintART is its taint tag representation. Instead of the taint tag used by TaintDroid, the TaintART uses the concept of level. Figure \ref{fig:fig:TaintART2} shows the table from TaintART. There are in total 4 levels where each of them consists some kind of data. Take level 2 as example. It represents both sensor data and location data. The system does not tell what exactly the information a variable carries. If a variable with level 2 information merge with a variable with level 1 information, the result will carry a level 2 tag. This is not desirable for the forensic purpose because of the need to tell the information flow as accurate as possible.
+Another feature of TaintART is its taint tag representation. Instead of the taint tag used by TaintDroid, the TaintART uses the concept of level. Figure \ref{fig:TaintART2} shows the table from TaintART. There are in total 4 levels where each of them consists some kind of data. Take level 2 as example. It represents both sensor data and location data. The system does not tell what exactly the information a variable carries. If a variable with level 2 information merge with a variable with level 1 information, the result will carry a level 2 tag. This is not desirable for the forensic purpose because of the need to tell the information flow as accurate as possible.
 
 \begin{figure}[ht]
   \centering
@@ -251,10 +251,128 @@ Another feature of TaintART is its taint tag representation. Instead of the tain
 
 
 \subsection{Principles of finding ICFG}
-\lipsum[5]
-\subsubsection{Taint sink}
+This part is completed through the FlowDroid, because only the FlowDroid can complete the control flow acquisition between components. In addition to the compiled APK, our input also includes the names of functions and tainted variables in DTA to reduce the number of branches that need to be optimized. This software simulates the full Android application life cycle to handle callbacks. Source and sink are detected by parsing the manifest file, art virtual machine bytecode file and XML layout file extracted from APK file. Finally, a dummy main function is generated to simulate the life cycle of activity, and a function call control flow chart (CFG) is established.
+
+Because this software is based on soot, we can optimize it in the process of getting ICFG through soot, that is, if there are malicious function parts involved, we can replace or add wrappers.
+\subsubsection{Definition of the lifecycle of android app}
+
+FlowDroid generates a dummy main method that exactly mimics lifestyles.asynchronously executing component:An app may have multiple activities and services. FlowDroid assumes that all items can be executed asynchronously and analyzes the life cycle mentioned in the dummy main method. FlowDroid is path insensitive and does not need to consider all possible execution orders in the lifecycle.
+
+When analyzing Android program to build call graph, we can't simply start from finding main method. All possible transfer relationships in the Android lifecycle must be modeled. The FlowDroid uses dummy main to simulate the life cycle. But the life cycle is not that simple. There are functions to save and restore state. Callback functions can also cause additional state changes.
+
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.4]{FlowDroid1.png}
+  \caption{the lifecycle of android app.}
+  \label{fig:FlowDroid1}
+\end{figure}
+
+
+\begin{table}
+  \caption{The functions in FlowDroid}
+   \centering
+   \begin{tabular}{ll}
+     \toprule
+       Function name  & Features \\
+     \midrule
+          
+<de.ecspride.reflectionprivacyleak1.ReflectionPrivacyLeak1: void onStart()>& wrap leakage on start\\
+
+<de.ecspride.reflectionprivacyleak1.ReflectionPrivacyLeak1: void onDestroy()> & wrap leakage on destroy\\
+
+<de.ecspride.reflectionprivacyleak1.ReflectionPrivacyLeak1: void onPause()>& wrap leakage on pause\\
+
+<de.ecspride.reflectionprivacyleak1.ReflectionPrivacyLeak1: void onRestart()>& wrap leakage on start\\
+
+<de.ecspride.reflectionprivacyleak1.ReflectionPrivacyLeak1: void onResume()>& wrap leakage on resume\\
+
+<de.ecspride.reflectionprivacyleak1.ReflectionPrivacyLeak1: void onStop()>& wrap leakage on stop\\
+
+<de.ecspride.reflectionprivacyleak1.ReflectionPrivacyLeak1: void onCreate(android.os.Bundle)>&wrap leakage on create \\
+     \bottomrule
+   \end{tabular}
+   
+   \label{tab:table1}
+ \end{table}
+
+There are two ways to register callbacks,
+
+(1)Register in XML: the XML file is mapped to multiple controls, the identifier is set, and the mapping is generated by tracking.
+
+(2)Command mode: trace function call path in class file, generate function call control flow chart
+
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.4]{FlowDroid4.png}
+  \caption{the more detailed lifecycle of android app.}
+  \label{fig:FlowDroid4}
+\end{figure}
+
+\subsubsection{Definition of the multiple entry point}
+
+We define the entry point as the functions and variables output from the DTA, we can add the entry point by modifying $app.calculateSourcesSinksEntrypoints("SourcesAndSinks.txt");$
+
+Through Flow droid, it'll treat those functions and variables as the dummy main and calculate the branch with them, and eventually output the related ICFG.
+
+\subsubsection{Overview of the whole process}
+
+Manifest.xml: apply global profile,
+
+*.odex: Art virtual machine bytecode (application)
+
+Layout XML layout profile
+
+Android needs to extract the APK file first when running the program, then get the configuration information in the compiled Android manifest.xml file, and execute the ODEX program.
+
+After decompressing the APK file, the functions related to the life cycle of FlowDroid, the callback functions, and the functions as source and sink.
+
+The main method is then generated for the lifecycle and callback functions. The main method is used to generate call graph and inter procedural control flow graph (ICFG)
+
+1) Unzipping APK file, which tracks the life cycle of activity and service by parsing XML, DEX and manifest files
+
+2) FlowDroid generates dummy main method according to lifestyles and callback method, and establishes ICFG control flow chart
+
+3) Report all flows from source to sink, including the information of the entire path
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.4]{FlowDroid3.png}
+  \caption{TaintART Taint Propogation.}
+  \label{fig:Overview of the whole process}
+\end{figure}
 
 \subsection{Principles of finding IFDS}
+The analysis of data flow mainly depends on the Heros tools. It's hard to understand the relationship between Heros, Jasmin and soot at some time. Heros and jasmin are tools developed on the basis of soot, which are equivalent to the plug-ins of soot and can't run independently. Because there is no main call method of their own, the latest version of compiled soot.jar download contains these two tools by default.
+
+Generally speaking, static stain analysis problems are all transformed into data flow analysis problems  for solution: first, build call graph (CG) according to the function call relationship in the program; second, in order to provide more fine-grained analysis of different execution paths of the program, also need to build control flow graph (CFG); finally, within and between processes, root According to different program characteristics, the specific data flow propagation analysis (and pointer analysis) is carried out. In the specific implementation, the stain analysis is often designed as an on-demand analysis algorithm: take the source function of the stain source as the driving source, analyze the propagation of its return value (stain) in the program until the sink function
+
+IFDS framework  is an accurate and efficient framework for context sensitive and flow sensitive data flow analysis. It was proposed by reps et al. In 1996. The full name of IFDS is interprocedural, finite, distributive, subset problem. The problem works in a limited data basin, and the data flow fact needs to pass through the set of Union (or intersection) The operation satisfies the allocation rate. All the problems satisfying the above restrictions can be solved by IFDS algorithm (tabulation algorithm in reference ), and the problem of stain analysis just meets the requirements of IFDS problem. The data flow value of stain analysis is the stain variable, indicating that the current stain variable can reach the program point stmt. The worst time complexity of the algorithm is $O (ed^{3})$, in which e is the current control flow chart D is the size of the data basin.
+
+The core idea of IFDSproblem solving algorithm is to transform program analysis problem into graph reachable problem . The analysis process of the algorithm is carried out on an expanded super graph (as shown in the example of Figure \ref{fig:IFDS}) constructed according to specific problems, in which data flow values can be shown as nodes in the graph. The algorithm extends a special data flow value: 0 value, which is used to represent empty sets; program analysis The calculation of the transfer function, that is, the transfer calculation of the data flow value, is transformed into the solution of the edge in the graph. In order to describe better, the algorithm decomposes the analysis into four kinds of transfer functions (edges) according to the characteristics of the program.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.4]{IFDS.png}
+  \caption{the process of IFDS.}
+  \label{fig:IFDS}
+\end{figure}
+(1) Call flow is the transfer function to solve function call (parameter mapping)
+
+(2) Return flow is the transfer function that solves the return value of function return statement to call point
+
+(3) Calltoreturn flow is the transfer function from function call to function return
+
+(4) Normal flow refers to the transfer function of statements other than the above three functions
+
+IFDS algorithm tabulation is a dynamic programming algorithm, that is, the path of the solved subproblem can be reused. Because its data flow value meets the allocation rate, the edge can be merged in the branch or function call. The algorithm includes two kinds of path calculation: path edge and summary edge
+
+the path edge represents the reachable path from the starting point to the current calculation point in the process
+
+Abstract edge refers to the edge from function call to function return. Its main feature is that if the same function call is encountered again at different call points, its abstract edge information can be directly used to avoid repeated path edge calculation within the function
+
+The following is an example in Figure \ref{fig:IFDS} to demonstrate how IFDS algorithm solves the problem of stain analysis. The data stream value represents the stain variable transmitted from the stain source. For simplicity, we abbreviate the stain source function as source (), and the leak point as sink (b), where B is the leak variable (the same below). As shown in line 2, an edge from 0 to a will be generated. For line 3, the assignment statement [b = a]; ]And a variable, normal flow is generally defined as: if the right value of the assignment statement is a stain variable, the left value is generated as a stain variable and the original value is retained, that is, the edge of a $\rightarrow$ B and a $\rightarrow$ A is generated. For the program function call in line 4, since B is the parameter of function foo, the analysis will start the call flow function. Call flow is generally defined as: if the argument is a stain variable, the stain of parameter will be generated correspondingly For the return point of the program function in line 10, return flow will generate the value of the return statement to the edge of the return value mapping of the call point, i.e. the edge of Y $\rightarrow$ C. for the sink function, if there is a data stream value passing through the statement, such as variable C in the figure, there is a path from 0 to statement sink (c), and C is the stain variable that finally triggers sink In foo, the calculated edge from the entrance to the exit (x $\rightarrow$ y in the figure) is analyzed and saved as the summary edge. After that, if foo is used in other locations of the program, the summary edge can be used directly
 
 \section{Application Implementation}
 \subsection{Useful Tools introduction}
@@ -264,20 +382,86 @@ Soot is a project with a long history. Its main purpose is to translate Java byt
 Soot is the foundation of the whole static analysis framework. It can disassemble APK files. How to realize it in the middle doesn't need to be concerned for the time being. What the code finally gets is the middle representation. Through the API, you can access the members of each jimple, the call relationship, etc. according to this relationship, you can also generate a visible picture of CFG (control flow graph), which looks comfortable.
 
 The documentation for \verb+Soot+ may be found at  \url{https://github.com/Sable/soot}
-
+And the tutorial to optimize the android app's code listed here at \url{https://github.com/Sable/soot/wiki/Using-Soot-as-a-Program-Optimizer}. This part we didn't implement yet.
 \subsection{Workflow}
-\lipsum[5]
-\subsubsection{benchmark}
-\lipsum[5]
+We proposed to adapt the TaintART to automated DTA tools that we demands. \\
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.4]{ApakoHa.png}
+  \caption{the process of ApakoHa.}
+  \label{fig:ApakoHa}
+\end{figure}
+
+The source code is transferred to the qemu x86 64 virtual machine. Coverted to ART Runtime executable by dex2oat
+                implemented with soot. In this step, TaintART performs a spot instrumentation operation. At runtime, TaintART uses the general-purpose register R5 to store the tags of the variables in the register, R1 to 3 passes the parameters between the methods, and R12 cooperates with the transfer of the internal operation of the register. A specific area is opened on the heap to store the taint information, so that the taint propagation logic can be detected To information leakage or potentially malicious behavior. After returning to the host, it will use soot(FlowDroid \& Heros) to perform static control flow analysis on the taint information and corresponding functions and APIs, and finally return it to the developer. The developer can modify the source code or use our auto optimization method to improve development efficiency. \\
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.2]{2.png}
+  \caption{the information of different source}
+  \label{fig:2}
+\end{figure}
+As for the information of different source(like web, IPC, socket or memory and files), we adopt different methods to deal with.
+
+\subsection{Display}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.4]{Display1.png}
+  \caption{the Display of \emph{ApakoHa}, DTA part}
+  \label{fig:ApakoHa}
+\end{figure}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.4]{Display2.png}
+  \caption{the Display of \emph{ApakoHa}, STA oart}
+  \label{fig:ApakoHa}
+\end{figure}
+\subsection{Benchmark}
 
 
-% \bibliographystyle{unsrt}  
-% \bibliography{references}  %%% Remove comment to use the external .bib file (using bibtex).
-%%% and comment out the ``thebibliography'' section.
+\begin{table}
+  \caption{The comparison of Control and Information analysis}
+   \centering
+   \begin{tabular}{lllll}
+     \toprule
+        & Control flow analysis &    & Information flow analysis& \\
+     \midrule
+      & mandatory access control  & Authority mechanism & STA & DTA\\
+     High efficiency& low & middle  &  middle &  middle \\
+     False positive rate& low &  low  & low  & high \\
+     Missing report rate&  middle & middle   & low &low \\
+     Flexibility& strong & strong &bad &bad \\
+     Easiness of use& good &   middle&bad &bad \\
+     \bottomrule
+   \end{tabular}
+   \label{tab:table1}
+ \end{table}
+
+ By using the information flow applying the DTA, the control flow's efficiency can be modified. In the process of optimization, those time will also be shortened.
+
+ And here's the analyzing time, taking TouTiao as example.
+ 
+ \begin{table}
+  \caption{The comparison of the state of the art android taint analysis}
+   \centering
+   \begin{tabular}{lll}
+     \toprule
+       Name & Time & Note \\
+     \midrule
+      boot the virtual machine& <1s &just open and test\\
+      test the app& 1min &should arrive branches as more as possible\\
+      FlowDroid STA&20s &apply the control flow and information flow analysis\\
+      soot optimization&unknown &not implemented\\
+     \bottomrule
+   \end{tabular}
+   \label{tab:table1}
+ \end{table}
 
 
-%%% Comment out this section when you \bibliography{references} is enabled.
-% \begin{thebibliography}{1}
+
+
 \subsection{References}
   \begin{description}
     \item[\cite{Sun2016CCS}] A Practical Multi-level Information-Flow Tracking System for Android RunTime
