@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.12)  4 JAN 2020 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.12)  5 JAN 2020 19:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/yiweiyang/Documents/java_security_maple_IR/arxiv-style/template
-(/Users/yiweiyang/Documents/java_security_maple_IR/arxiv-style/template.tex
+**/Users/yiweiyang/Documents/java_security_maple_IR/paper/template
+(/Users/yiweiyang/Documents/java_security_maple_IR/paper/template.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -594,7 +594,22 @@ Package: xparse 2019-05-03 L3 Experimental document command parser
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -602,7 +617,14 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 \@quotelevel=\count387
 \@quotereset=\count388
- (./template.aux)
+ (./template.aux
+
+LaTeX Warning: Label `fig:TaintDroid' multiply defined.
+
+
+LaTeX Warning: Label `fig:inspeckage1' multiply defined.
+
+)
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -728,7 +750,31 @@ Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+) (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count390
+\scratchdimen=\dimen163
+\scratchbox=\box47
+\nofMPsegments=\count391
+\nofMParguments=\count392
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count393
+\MPscratchDim=\dimen164
+\MPnumerator=\count394
+\makeMPintoPDFobject=\count395
+\everyMPtoPDFconversion=\toks21
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 40.
@@ -757,68 +803,129 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 41.
+
+
+LaTeX Warning: Reference `sec:FlowDroid' on page 1 undefined on input line 44.
+
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 51.
 
-Overfull \hbox (17.09735pt too wide) in paragraph at lines 72--88
+Overfull \hbox (56.59012pt too wide) in paragraph at lines 72--92
  [][] 
  []
 
+<TaintDroid.png, id=89, 627.34375pt x 297.11pt>
+File: TaintDroid.png Graphic file (type png)
+<use TaintDroid.png>
+Package pdftex.def Info: TaintDroid.png  used on input line 103.
+(pdftex.def)             Requested size: 376.40915pt x 178.26736pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
 
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 176.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+ [2 <./TaintDroid.png>]
+<TaintDroid2.png, id=111, 1113.15875pt x 447.6725pt>
+File: TaintDroid2.png Graphic file (type png)
+<use TaintDroid2.png>
+Package pdftex.def Info: TaintDroid2.png  used on input line 129.
+(pdftex.def)             Requested size: 445.25562pt x 179.06583pt.
+<inspeckage1.png, id=113, 163.61125pt x 293.095pt>
+File: inspeckage1.png Graphic file (type png)
+<use inspeckage1.png>
+Package pdftex.def Info: inspeckage1.png  used on input line 146.
+(pdftex.def)             Requested size: 98.1675pt x 175.85834pt.
+<inspeckage2.png, id=114, 2708.1175pt x 1102.1175pt>
+File: inspeckage2.png Graphic file (type png)
+<use inspeckage2.png>
+Package pdftex.def Info: inspeckage2.png  used on input line 153.
+(pdftex.def)             Requested size: 270.8276pt x 110.2182pt.
+ [3 <./TaintDroid2.png>]
+<TaintART1.png, id=121, 707.64375pt x 509.905pt>
+File: TaintART1.png Graphic file (type png)
+<use TaintART1.png>
+Package pdftex.def Info: TaintART1.png  used on input line 165.
+(pdftex.def)             Requested size: 212.29475pt x 152.97267pt.
+ [4 <./inspeckage1.png> <./inspeckage2.png> <./TaintART1.png>]
+<TaintART2.png, id=132, 554.07pt x 527.9725pt>
+File: TaintART2.png Graphic file (type png)
+<use TaintART2.png>
+Package pdftex.def Info: TaintART2.png  used on input line 182.
+(pdftex.def)             Requested size: 166.22227pt x 158.39296pt.
+<TaintART3.png, id=134, 444.66125pt x 235.88126pt>
+File: TaintART3.png Graphic file (type png)
+<use TaintART3.png>
+Package pdftex.def Info: TaintART3.png  used on input line 192.
+(pdftex.def)             Requested size: 177.86134pt x 94.35083pt.
+ [5 <./TaintART2.png> <./TaintART3.png>]
+<Lattice.png, id=145, 556.0775pt x 245.91875pt>
+File: Lattice.png Graphic file (type png)
+<use Lattice.png>
+Package pdftex.def Info: Lattice.png  used on input line 203.
+(pdftex.def)             Requested size: 222.42705pt x 98.36575pt.
+<TaintART4.png, id=147, 1385.175pt x 844.15375pt>
+File: TaintART4.png Graphic file (type png)
+<use TaintART4.png>
+Package pdftex.def Info: TaintART4.png  used on input line 237.
+(pdftex.def)             Requested size: 277.03009pt x 168.82776pt.
 
 
-LaTeX Warning: Citation 'Sun2016CCS' on page 5 undefined on input line 191.
+LaTeX Warning: Reference `fig:fig:TaintART2' on page 6 undefined on input line 243.
+
+[6 <./Lattice.png>]
+<TaintART5.png, id=156, 1184.425pt x 232.87pt>
+File: TaintART5.png Graphic file (type png)
+<use TaintART5.png>
+Package pdftex.def Info: TaintART5.png  used on input line 247.
+(pdftex.def)             Requested size: 473.76161pt x 93.14633pt.
+
+Overfull \hbox (4.00662pt too wide) in paragraph at lines 247--248
+ [][] 
+ []
 
 
-LaTeX Warning: Citation 'ABDE2019WCNCW' on page 5 undefined on input line 192.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./TaintART4.png> <./TaintART5.png (PNG copy)>]
+
+LaTeX Warning: Citation 'Sun2016CCS' on page 8 undefined on input line 283.
 
 
-LaTeX Warning: Citation 'Xu2018SPW' on page 5 undefined on input line 193.
+LaTeX Warning: Citation 'ABDE2019WCNCW' on page 8 undefined on input line 284.
 
 
-LaTeX Warning: Citation 'Yerima2014NGMAST' on page 5 undefined on input line 194.
+LaTeX Warning: Citation 'Xu2018SPW' on page 8 undefined on input line 285.
 
 
-LaTeX Warning: Citation 'Hsiao2014IMIS' on page 5 undefined on input line 195.
+LaTeX Warning: Citation 'Yerima2014NGMAST' on page 8 undefined on input line 286.
 
 
-LaTeX Warning: Citation 'Ngu2017ICSE' on page 5 undefined on input line 196.
+LaTeX Warning: Citation 'Hsiao2014IMIS' on page 8 undefined on input line 287.
 
 
-LaTeX Warning: Citation 'Arzt2014SIGPLAN' on page 5 undefined on input line 197.
+LaTeX Warning: Citation 'Ngu2017ICSE' on page 8 undefined on input line 288.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
-[5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
+
+LaTeX Warning: Citation 'Arzt2014SIGPLAN' on page 8 undefined on input line 289.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
+[8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package rerunfilecheck Info: File `template.out' has not changed.
+(rerunfilecheck)             Checksum: 32EC4AC06CE0D88ABE42B7D12311BCA2;1397.
 
-
-Package rerunfilecheck Warning: File `template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `template.out':
-(rerunfilecheck)             Before: A1F6443CF015164A13679C85A6C72523;1257
-(rerunfilecheck)             After:  08B77356F45780AEEB14DA5DD52B294B;1252.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -830,22 +937,18 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23290 strings out of 492616
- 427455 string characters out of 6129481
- 953999 words of memory out of 5000000
- 26885 multiletter control sequences out of 15000+600000
- 593669 words of font info for 146 fonts, out of 8000000 for 9000
+ 24085 strings out of 492616
+ 438616 string characters out of 6129481
+ 966509 words of memory out of 5000000
+ 27619 multiletter control sequences out of 15000+600000
+ 584521 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,10n,63p,855b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsubsection.4.1.1} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.0.1} has been referenced but does not exist, replaced by a fixed one
-
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (5 pages, 154845 bytes).
+ 40i,11n,63p,1027b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on template.pdf (8 pages, 1042472 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 30369 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 26331 words of extra memory for PDF output out of 29859 (max. 10000000)
 
