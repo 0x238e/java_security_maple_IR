@@ -24,11 +24,11 @@ We proposed to adapt the TaintART to automated DTA tools that we demands.
 
 ​        
 
-![](./research-proposal/1.png)
+![](./1.png)
 
 The source code is transferred to the qemu x86 64 virtual machine. Coverted to ART Runtime executable by dex2oat implemented with llvm. In this step, TaintART performs a spot instrumentation operation. At runtime, TaintART uses the general-purpose register R5 to store the tags of the variables in the register, R1 to 3 passes the parameters between the methods, and R12 cooperates with the transfer of the internal operation of the register. A specific area is opened on the heap to store the stain information, so that the stain propagation logic can be detected To information leakage or potentially malicious behavior. After returning to the host, it will use JLLVM Pass (this step can be replaced with Maple IR phase) to perform static control flow analysis on the stain information and corresponding functions and APIs, and finally return it to the developer. The developer can modify the source code or use Pass to improve development efficiency. The final bytecode will enable Maple IR to generate the target.
 
-![](./research-proposal/2.png)
+![](./proposal/2.png)
 
 As for the information of different source(like web, IPC, socket or memory and files), we adopt different methods to deal with.
 
